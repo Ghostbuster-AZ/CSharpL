@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>First JS</title>
+    <script type="text/javascript" language="javascript">
+        document.write("Hello JS");//Notification
+        document.write("Valid");//client side validation
+        document.write("Valid");//Manipulation HTML Page
+     
+        function sayHello()
+        {
+            alert("Hello Saying it");
+        }
+
+       
+    </script>
+    <noscript>
+        Javascript needs to go ahead
+    </noscript>
+</head>
+<body onload="VARlABL()">
+    <script type="text/javascript">
+        var myVar = "global";
+        function VARlABL() {
+            var myVar = "local";
+            document.write(myVar);
+        }
+    </script>
+    <input type="button" onclick="sayHello()" value="SayHello" />
+    <input type="button" onclick="SayHello2ndTime()" value="SayHello2ndTime" />
+</body>
+</html>
