@@ -12,6 +12,11 @@ namespace CSharpL
             Rectangle rt = new Rectangle();
             rt.getArea();
             rt.Display();
+
+            double d = 3.4;
+            int i;
+            i = (int)d;
+
         }
 
     }

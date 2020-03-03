@@ -14,6 +14,15 @@ namespace CSharpLC
 
             rt.GetMeasurement();
             rt.Display();
+
+            MethodCalling mcall = new MethodCalling();
+            int result=mcall.FindMax(4, 11);
+            Console.WriteLine("Result: {0}",result);
+            Console.ReadKey();
+
+            int factt= mcall.factorial(2);
+            Console.WriteLine("Factorial: {0}",factt);
+            Console.ReadKey();
         }
     }
     public class Rectangle
@@ -37,5 +46,20 @@ namespace CSharpLC
             Console.WriteLine("Area: {0}", getArea());
             Console.ReadKey();
         }
+    }
+    public class GetAread
+    {
+        public GetAread()
+        {
+            const double pi = 3.14;
+            double r;
+
+            Console.WriteLine("Enter radius: ");
+            r = Convert.ToDouble(Console.ReadLine());
+            double circle;
+            circle = pi * r * r;
+            Console.WriteLine("Radius {0}, Area{1}", r, circle);
+        }
+
     }
 }
