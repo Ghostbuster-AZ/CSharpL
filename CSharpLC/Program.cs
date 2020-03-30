@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace CSharpLC
 {
@@ -10,18 +11,21 @@ namespace CSharpLC
     {
         static void Main(string[] args)
         {
+            PathTest pt = new PathTest();
+            pt.PathTested();
+
             Rectangle rt = new Rectangle();
 
             rt.GetMeasurement();
             rt.Display();
 
             MethodCalling mcall = new MethodCalling();
-            int result=mcall.FindMax(4, 11);
-            Console.WriteLine("Result: {0}",result);
+            int result = mcall.FindMax(4, 11);
+            Console.WriteLine("Result: {0}", result);
             Console.ReadKey();
 
-            int factt= mcall.factorial(2);
-            Console.WriteLine("Factorial: {0}",factt);
+            int factt = mcall.factorial(2);
+            Console.WriteLine("Factorial: {0}", factt);
             Console.ReadKey();
         }
     }
@@ -62,4 +66,18 @@ namespace CSharpLC
         }
 
     }
+
+    public class PathTest
+     {
+        public void PathTested()
+        {
+            string filename = "@C:\\Filename\\text.txt";
+            string path = Path.GetFileName(filename);
+
+            Console.WriteLine("Filename: {0}", filename);
+            Console.WriteLine("Path: {0}", path);
+        }
+
+      }
+   
 }
