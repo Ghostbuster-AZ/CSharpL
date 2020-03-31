@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-console-app-temp",
+  "version": "0.0.0",
+  "description": "NodejsConsoleAppTemp",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

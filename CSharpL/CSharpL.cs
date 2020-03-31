@@ -10,11 +10,11 @@ namespace CSharpL
     {
         static void Main(string[] args)
         {
-            string filename = "@C:\\Filename\\text.txt";
-            string path= Path.GetFileName(filename);
+            //string filename = "@C:\\Filename\\text.txt";
+            //string path= Path.GetFileName(filename);
 
-            Console.WriteLine("Filename: {0}",filename);
-            Console.WriteLine("Path: {1}",path);
+            //Console.WriteLine("Filename: {0}",filename);
+            //Console.WriteLine("Path: {1}",path);
 
             namespacedec nsdec = new namespacedec();
             nsdec.VaribalType();
