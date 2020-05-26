@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function readAllCookies()
+        {
+            var allcookies = document.cookie;
+            document.write("All cookies: " + allcookies);
+
+            cookiesarray = allcookies.split(';');
+
+            for (var i = 0; i < cookiesarray.length; i++)
+            {
+                name = cookiesarray[i].split('=')[0];
+                value = cookiesarray[i].split('=')[1];
+                document.write("Key is: " + name + "and Value is: " + value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" action="">
+        <p>click the following button and see the result</p>
+        <input type="button" value="Get cookies" onclick="readAllCookies()" />
+    </form>
+</body>
+</html>

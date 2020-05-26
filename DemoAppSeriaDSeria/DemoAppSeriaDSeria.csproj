@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DDD890B9-7CC0-49B5-8038-0CE2D54FD9A1}</ProjectGuid>
+    <ProjectGuid>{33519066-A595-48E7-A2AA-B51C9737F8A6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpLC</RootNamespace>
-    <AssemblyName>CSharpLC</AssemblyName>
+    <RootNamespace>DemoAppSeriaDSeria</RootNamespace>
+    <AssemblyName>DemoAppSeriaDSeria</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constant.cs" />
-    <Compile Include="CSharpDataType.cs" />
-    <Compile Include="MethodCalling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Cookie.html" />
-    <Content Include="Example.html" />
-    <Content Include="HelloJS.html" />
-    <Content Include="InnerLoop.html" />
-    <Content Include="JSFirst.js" />
-    <Content Include="Test.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
